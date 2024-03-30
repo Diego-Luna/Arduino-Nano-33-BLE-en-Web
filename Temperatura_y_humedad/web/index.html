@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arduino Nano 33 BLE Sense Monitor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="main">
+    <section class="temperatura-container">
+      <p id="temperature">--°C</div>
+      <p class="temperature">Temperatura</div>
+    </section>
+    <section class="humedad-container">
+      <p id="humidity">--%</div>
+      <p class="humidity">Humedad</div>
+    </section>
+  </main>
+
+  <section class="centro" id="sensorData">
+    <figure id="nano" class="img hidden">
+      <img src="./img/nano33.png" alt="">
+    </figure>
+    <div id="connectButtonContainer">
+      <button id="connectButton">Conectar a Arduino</button>
+    </div>
+    <div id="loading" class="hidden"></div>
+  </section>
+
+
+  <script src="js/script.js"></script>
+  <script src="js/animaciones.js"></script>
+</body>
+</html>
